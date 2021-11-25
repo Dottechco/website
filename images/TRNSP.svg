@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 2880 1800">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="PencilOnly" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<g opacity="1">
+<path d="M300.338+435.434L27.3211+435.434L27.3211+1351.89L300.338+1351.89C910.457+1351.89+910.457+435.434+300.338+435.434ZM300.338+618.726C656.668+618.726+656.668+1168.6+300.338+1168.6L210.613+1168.6L210.613+618.726L300.338+618.726Z" fill-rule="evenodd" fill="#000000" opacity="1"/>
+<path d="M1370.61+1364.71C2001.24+1364.71+2001.24+420.053+1370.61+420.053C739.982+420.053+739.982+1364.71+1370.61+1364.71ZM1370.61+1175.01C1004.03+1175.01+1004.03+608.472+1370.61+608.472C1737.19+608.472+1737.19+1175.01+1370.61+1175.01Z" fill-rule="evenodd" fill="#000000" opacity="1"/>
+<path d="M2349.88+1351.89L2349.88+618.726L2578.03+618.726L2578.03+436.716L1938.43+436.716L1938.43+618.726L2166.58+618.726L2166.58+1351.89L2349.88+1351.89Z" fill-rule="evenodd" fill="#000000" opacity="1"/>
+<path d="M2754.91+1154.5C2616.48+1154.5+2616.48+1360.87+2754.91+1360.87C2892.07+1360.87+2895.92+1154.5+2754.91+1154.5Z" fill-rule="evenodd" fill="#000000" opacity="1"/>
+</g>
+</g>
+</svg>
