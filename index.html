@@ -1,181 +1,652 @@
 <!DOCTYPE html>
-<!--
-	Indus by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Landing page template built with HTML and Bootstrap 4 for presenting training courses, classes, workshops and for convincing visitors to register using the form.">
+    <meta name="author" content="Inovatik">
 
-<html lang="en" class="no-js">
-	<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>Indus HTML5 Free Responsive Template | Template stock</title>
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/et-lineicon.css" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
-        <!--[if IE]>
-        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-	</head>
-	<body>
+    <!-- Website Title -->
+    <title>DOT Technologies</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicondotsvg.svg">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
 
-        <!-- Preloader -->
-        <div class="animationload">
-            <div class="loader">
-                Loading...
-            </div>
-        </div> 
-        <!-- End Preloader -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 
-        <!-- =========================
-                 HOME
-        ========================== -->
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
 
-		<section id="home">
-			<div class="content">
-                <div id="large-header" class="large-header">
-                    <canvas id="demo-canvas"></canvas>
-                    <div id="countdown_dashboard" class="home-main container">
-                        <div class="row">
-                            <div class="logo">
-                                <img src="images/WHTTRNSP.svg" alt="logo" height="400px">
-                                <p></p>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/TRNSP.svg" alt="alternative"></a> 
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#register">REGISTER <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#description">DETAILS</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/DOT-Technologies-106722298502675/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.instagram.com/dottechonline/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <div class="countdown">
+                            <h5>This Website is under</h5>
+                        </div>
+                        <h1>Under Construction!</h1>
+                        <p class="p-large">Complete your Registration process to get notiofication when work is completed</p>
+                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
+                        <a class="btn-outline-lg page-scroll" href="#instructor">DISCOVER</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        
+        <!-- Image Slider -->
+        <div class="outer-container">
+            <div class="slider-container">
+                <div class="swiper-container image-slider-1">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Slide -->
+                        <div class="swiper-slide" >
+                            <img class="img-fluid" src="images/engged!/4.png" alt="alternative">
+                        </div>
+                        <!-- end of slide -->
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="images/engged!/2.png" alt="alternative">
+                        </div>
+                        <!-- end of slide -->
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="images/engged!/5.png" alt="alternative">
+                        </div>
+                        <!-- end of slide -->
+
+                    </div> <!-- end of swiper-wrapper -->
+                    
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- end of add arrows -->
+                    
+                </div> <!-- end of swiper-container -->
+            </div> <!-- end of slider-container -->
+        </div> <!-- end of outer-container -->
+        <!-- end of image slider -->
+
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Registration -->
+    <div id="register" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Register Using The Form</h2>
+                        <p>Please fill the form with your Name, email and Phone Number. It will help us to know you more and we can serve you with our better version </p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>Your information</strong> is required to complete the registration</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>It's safe with us</strong> and will not be used for marketing</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>You will receive</strong> a confirmation email in less than 24h</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Registration Form -->
+                    <div class="form-container">
+                        <form id="registrationForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Complete name</label>
+                                <div class="help-block with-errors"></div>
                             </div>
-                        </div>                                            
-                </div> <!-- LARGE HEADER -->
-            </div> <!-- END CONTENT -->
-        </section>
-
-        <!-- =========================
-                 NEWSLETTER
-        ========================== -->
-
-        <section class="newsletter">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                        <div class="main_content">
-                            <h4><strong>Our site is under construction!</strong></h4>
-                            <p>Sorry to have missed you. We'll be back with a newly updated website shortly!</p>
-                            <div id="" class="confirm-message"></div>
-                            <form id="" name="">
-                                <div class="input-group">
-                                    <input class="form-control news-input" type="text" name="subscribe_email" id="subscribe_email" placeholder="Email" />
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-custom news-btn" id="" name="subscribe_btn"><span>Subscribe</span></button>
-                                    </span>
-                                </div><!-- /input-group -->
-                            </form><!-- END FORM -->
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========================
-                 FEATURES
-        ========================== -->
-
-        <section class="features parallax" data-stellar-background-ratio="0.7" id="features">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="features-box">
-                            <div class="open-overlay"><i class="icon-lightbulb"></i></div>
-                            <h4>Assured Quality</h4>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="features-box">
-                            <div class="open-overlay"><i class="icon-ribbon"></i></div>
-                            <h4>Great Features</h4>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="features-box">
-                            <div class="open-overlay"><i class="icon-circle-compass"></i></div>
-                            <h4>Customer Services</h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>    
-
-        <!-- =========================
-                 CONTACT
-        ========================== -->
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <h4>Get In Touch</h4>
-                        <div class="line-separate line-white text-center"><span></span></div>
-                        <p></p>
-                    </div> <!-- end Our Location -->
-                </div> <!-- end row -->
-                <!-- CONTACT FORM -->
-                <div id="cformSuccessMsg" style="display: none;" class="confirm-message"></div>
-                <form id="" name="contactForm" method="POST" >
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
-                            <input class="" type="text" name="contact_name" id="contact_name" placeholder="Name" />
-                        </div> <!-- end Name -->
-                        <div class="col-lg-4 col-md-4">
-                            <input class="" type="text" name="contact_email" id="contact_email" placeholder="Email" />
-                        </div> <!-- end Email -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-lg-offet-2 col-md-offset-2">
-                            <textarea name="contact_message" id="contact_message" placeholder="Message"></textarea>
-                        </div>
-                    </div> <!-- end Message -->
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="text-right">
-                                <button class="btn btn-custom" id="contact_submit_btn" name="contact_submit_btn"><span>Send Message</span></button>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email address</label>
+                                <div class="help-block with-errors"></div>
                             </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                                <label class="label-control" for="rphone">Phone number</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I've read and agree to our written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">REGISTER</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div> <!-- end of form-container -->
+                    <!-- end of registration form -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of registration -->
+
+
+    <!-- Partners -->
+
+
+    <!-- Instructor -->
+   
+    <!-- end of instructor -->
+
+
+    <!-- Description -->
+    <div id="description" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Our Specialities</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled li-space-lg first">
+                        <li class="media">
+                            <i class="bullet">1</i>
+                            <div class="media-body">
+                                <h4>Optimizing your site for mobile devices</h4>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">2</i>
+                            <div class="media-body">
+                                <h4>Understand how users search</h4>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">3</i>
+                            <div class="media-body">
+                                <h4>Write for humans optimize for engines</h4>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <ul class="list-unstyled li-space-lg second">
+                        <li class="media">
+                            <i class="bullet">4</i>
+                            <div class="media-body">
+                                <h4>Analyse your existing search traffic</h4>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">5</i>
+                            <div class="media-body">
+                                <h4>Keep updated with the latest changes</h4>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">6</i>
+                            <div class="media-body">
+                                <h4>Learn the most important ranking factors</h4>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of description -->
+
+
+
+    <!-- Takeaways -->
+    <div class="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-atom"></i>
                         </div>
-                    </div> <!-- end button -->
-                </form><!-- END FORM -->
-            </div> <!-- end container -->
-        </section> <!-- end Contact -->
+                        <div class="card-body">
+                            <h4 class="card-title">Position Analysis</h4>
+                            <p class="thallu">Understand where your website is currently positioned in search engine queries</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
 
-        <!-- =========================
-                 FOOTER
-        ========================== -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Keyword Planning</h4>
+                            <p class="thallu">Find the best relevant keywords that fit your website's strategy in the long run</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
 
-        <footer class="footer">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="social list-inline">
-                            <li class="social-btn" id="fb"><a href="https://www.facebook.com/DOT-Technologies-106722298502675/?ref=pages_you_manage"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-btn" id="tw"><a href="https://twitter.com/dottechco?s=20"><i class="fa fa-twitter"></i></a></li>
-                            <li class="social-btn" id="tbl"><a href="https://dottechco.tumblr.com"><i class="fa fa-tumblr"></i></a></li>
-                            <li class="social-btn" id="pin"><a href="https://www.flickr.com/photos/194454417@N02/"><i class="fa  fa-pinterest"></i></a></li>
-                            <li class="social-btn" id="flk"><a href="https://in.pinterest.com/dottechonline/?invite_code=acd1c37a55544034a3a1ba2ba4ca3d52&sender=1026398708733898289"><i class="fa  fa-flickr"></i></a></li>
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Writing Articles</h4>
+                            <p>How to plan your content strategy and write articles that are optimized for Website</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Linking Utilities</h4>
+                            <p>Linking all of your social media accounts and other utilities to do your work effortless</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="far fa-handshake"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Customer Service</h4>
+                            <p>We provide reliable customer service to cover your loss and any other issues</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Evaluate Actions</h4>
+                            <p>Learn how to use the right analytics tools to evaluate your Website and improve them</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards -->
+    <!-- end of takeaways -->
+
+
+   
+
+
+
+    <!-- Date -->
+    <div id="date" class="basic-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h2>Pre-book our Sevices</h2>
+                        <p>Prebook our services through contacting us through email. This is option is available till the site maintance will end. We apologise for your inconvenience. Please Register and continue</p>
+                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-5 -->
+    <!-- end of date -->
+
+
+    <!-- Newsletter -->
+    <div class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Stay updated with news by subscribing to our newsletter and our social channels</h3>
+                    
+                    <!-- Newsletter Form -->
+                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="nemail" required>
+                            <label class="label-control" for="nemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>You've read and agree to our written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SIGN UP</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of newsletter form -->
+
+                    <!-- Social Links -->
+                    <div class="icon-container">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/DOT-Technologies-106722298502675/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/dottechco?s=20">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://pin.it/7ndQNhS">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/dottechonline/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/company/dot-tech-ltd">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of icon-container -->
+                    <!-- end of social icons -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of newsletter -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Contact Details</h2>
+                        <p>For queries please get in touch using the contact details below. For any questions use the form.</p>
+                        
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">Nilambur, Kerala, 679334 INDIA</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="media-body">+91 7306766921, &nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp; +44 31 276 112</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="light-gray" href="mailto:dottechonline@gmail.com">dottechonline@gmail.com</a> <i class="fas fa-globe"></i><a class="light-gray" href="#your-link">www.thedottech.com</a></div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to DOT Technoligie's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-3 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-col first">
+                        <h5>About DOT Technologies</h5>
+                        <p class="p-small">We're passionate about Providing Web Services with High quality Service at a reasonable rate</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col second">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
+                            </li>
                         </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <p class="copyright">Copyright© 2021 </p>
-                </div>
-            </div>
-        </footer>
-            
-        <!-- JAVASCRIPTS -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.lwtCountdown-1.0.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/animated.js"></script>
-        <script src="js/main.js"></script>
-	</body>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col third">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col fourth">
+                        <h5>Social Media</h5>
+                        <p class="p-small">For news & updates follow us</p>
+                        <a href="https://www.facebook.com/DOT-Technologies-106722298502675/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/dottechco?s=20">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://pin.it/7ndQNhS">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dottechonline/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/dot-tech-ltd">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCa09ap0nqm3aWWEYeiVt7tw">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2021 <a href="https://www.thedottech.com">DOT Technologies</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.countdown.min.js"></script> <!-- The Final Countdown plugin for jQuery -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
