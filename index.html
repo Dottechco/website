@@ -17,6 +17,9 @@
 	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
+    <!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Website Title -->
     <title>DOT Technologies</title>
     
@@ -191,7 +194,7 @@
 
                     <!-- Registration Form -->
                     <div class="form-container">
-                        <form id="registrationForm" data-toggle="validator" data-focus="false">
+                        <form id="registrationForm" data-toggle="validator" data-focus="false" action="" method="POST">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
                                 <label class="label-control" for="rname">Complete name</label>
@@ -624,7 +627,6 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
@@ -636,6 +638,26 @@
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+
+    <script>
+        $("#registrationForm").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzvssStq4VpgyD8ubmU404SodY_jpNjw5lX4iqtiWAHw1nsXs4KPQKQDexpPK2d5xPmkg/exec",
+                data:$("#registrationForm").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
     
     	
     <!-- Scripts -->
